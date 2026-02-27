@@ -1,12 +1,6 @@
-import { motion } from 'motion/react';
-import { useInView } from 'motion/react';
-import { useRef } from 'react';
 import { BookOpen, Award, Code, Lightbulb, Rocket, Trophy } from 'lucide-react';
 
 export function LearningJourneySection() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
-
   const milestones = [
     {
       icon: BookOpen,
@@ -55,16 +49,10 @@ export function LearningJourneySection() {
   return (
     <section
       id="learning"
-      ref={ref}
       className="min-h-screen flex items-center justify-center relative py-20"
     >
       <div className="max-w-7xl mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-black mb-4">
             <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
               Learning Journey
@@ -74,7 +62,7 @@ export function LearningJourneySection() {
           <p className="text-gray-400 mt-6 text-lg">
             My path to becoming an ML enthusiast
           </p>
-        </motion.div>
+        </div>
 
         <div className="relative">
           {/* Timeline line */}
@@ -84,21 +72,15 @@ export function LearningJourneySection() {
             {milestones.map((milestone, index) => {
               const isEven = index % 2 === 0;
               return (
-                <motion.div
+                <div
                   key={milestone.title}
-                  initial={{ opacity: 0, x: isEven ? -50 : 50 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.6, delay: index * 0.2 }}
                   className={`flex items-center gap-8 ${
                     isEven ? 'md:flex-row' : 'md:flex-row-reverse'
                   } flex-col`}
                 >
                   {/* Content */}
                   <div className={`flex-1 ${isEven ? 'md:text-right' : 'md:text-left'}`}>
-                    <motion.div
-                      whileHover={{ scale: 1.05, y: -5 }}
-                      className="glassmorphic-card p-6 rounded-xl group relative overflow-hidden"
-                    >
+                    <div className="glassmorphic-card p-6 rounded-xl group relative overflow-hidden hover:scale-105 hover:-translate-y-1 transition-all duration-300">
                       {/* Glow effect */}
                       <div
                         className={`absolute inset-0 bg-gradient-to-br ${milestone.color} opacity-0 group-hover:opacity-20 blur-2xl transition-opacity duration-500`}
@@ -119,23 +101,19 @@ export function LearningJourneySection() {
                           {milestone.description}
                         </p>
                       </div>
-                    </motion.div>
+                    </div>
                   </div>
 
                   {/* Center icon */}
                   <div className="relative z-10">
-                    <motion.div
-                      whileHover={{ scale: 1.2, rotate: 360 }}
-                      transition={{ duration: 0.5 }}
-                      className={`p-4 bg-gradient-to-br ${milestone.color} rounded-full shadow-2xl`}
-                    >
+                    <div className={`p-4 bg-gradient-to-br ${milestone.color} rounded-full shadow-2xl`}>
                       <milestone.icon className="w-8 h-8 text-white" />
-                    </motion.div>
+                    </div>
                   </div>
 
                   {/* Spacer for alignment */}
                   <div className="flex-1 hidden md:block" />
-                </motion.div>
+                </div>
               );
             })}
           </div>

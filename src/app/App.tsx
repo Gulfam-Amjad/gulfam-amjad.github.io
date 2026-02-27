@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { StarfieldBackground } from '@/app/components/StarfieldBackground';
 import { Header } from '@/app/components/Header';
 import { HeroSection } from '@/app/components/HeroSection';
@@ -6,9 +7,10 @@ import { SkillsSection } from '@/app/components/SkillsSection';
 import { ProjectsSection } from '@/app/components/ProjectsSection';
 import { LearningJourneySection } from '@/app/components/LearningJourneySection';
 import { ContactSection } from '@/app/components/ContactSection';
+import { ProjectDetail } from '@/app/components/ProjectDetail';
 import { useEffect } from 'react';
 
-export default function App() {
+function HomePage() {
   useEffect(() => {
     const cursorGlow = document.querySelector('.cursor-glow') as HTMLElement;
     
@@ -39,13 +41,24 @@ export default function App() {
         <Header />
         <main>
           <HeroSection />
+          <ProjectsSection />
           <AboutSection />
           <SkillsSection />
-          <ProjectsSection />
           <LearningJourneySection />
           <ContactSection />
         </main>
       </div>
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/project/:projectId" element={<ProjectDetail />} />
+      </Routes>
+    </Router>
   );
 }
