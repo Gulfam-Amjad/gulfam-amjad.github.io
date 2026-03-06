@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { StarfieldBackground } from '@/app/components/StarfieldBackground';
 import { Header } from '@/app/components/Header';
 import { HeroSection } from '@/app/components/HeroSection';

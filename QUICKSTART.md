@@ -2,6 +2,11 @@
 
 ## View Your Portfolio Right Now! 🌐
 
+Live site:
+```
+https://gulfam-amjad.github.io/
+```
+
 Your portfolio is **already running**! Just open:
 ```
 http://localhost:5173
@@ -101,8 +106,12 @@ Ctrl+Shift+P → "TypeScript: Restart TS Server"
 
 ### Option 3: GitHub Pages
 ```bash
-npm run build
-# Then follow GitHub Pages setup for the dist folder
+npm run deploy
+```
+
+Production URL:
+```
+https://gulfam-amjad.github.io/
 ```
 
 ## Tips & Tricks 💡

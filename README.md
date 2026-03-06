@@ -3,12 +3,14 @@
 
 A stunning, futuristic portfolio website showcasing Machine Learning projects, skills, and journey. Built with modern web technologies and optimized for performance and accessibility.
 
+Live URL: https://gulfam-amjad.github.io/
+
 ## ✨ Features
 
 - **Futuristic Design**: Dark theme with cyan/blue/purple gradient accents
 - **Animated Starfield Background**: Dynamic particle system for visual appeal
 - **Responsive Design**: Mobile-first approach with responsive navigation
-- **Smooth Animations**: Framer Motion for fluid transitions and interactions
+- **Smooth Animations**: CSS-driven transitions and effects
 - **SEO Optimized**: Comprehensive meta tags and semantic HTML
 - **Error Handling**: Error boundaries for graceful error recovery
 - **Loading States**: Beautiful loading screen for better UX
@@ -19,9 +21,7 @@ A stunning, futuristic portfolio website showcasing Machine Learning projects, s
 - **Frontend Framework**: React 18.3.1 with TypeScript
 - **Build Tool**: Vite 6.3.5 (Lightning fast HMR)
 - **Styling**: Tailwind CSS 4.1 + Custom CSS
-- **Animations**: Framer Motion (motion)
 - **Icons**: Lucide React
-- **UI Components**: Radix UI primitives
 - **Development**: TypeScript with strict mode
 
 ## 📦 Installation
