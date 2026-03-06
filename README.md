@@ -1,16 +1,18 @@
-potfolio is live at this url see this
-
-gulfam-amjad.github.io
-
-
 # 🚀 Gulfam Amjad - ML Portfolio
 
 A stunning, futuristic portfolio website showcasing Machine Learning projects, skills, and journey. Built with modern web technologies and optimized for performance and accessibility.
 
 Live URL: https://gulfam-amjad.github.io/
 
+## ✨ Featured Project
+
+**📧 Spam Email Classifier** - A production-level NLP project using Python, Scikit-learn, and Streamlit to classify emails as spam or legitimate with 98%+ accuracy.
+- **Demo**: https://email-spam-detection-6buvueq6rcqp2xjtp7o2uo.streamlit.app/
+- **Source**: https://github.com/Gulfam-Amjad/email-spam-detection
+
 ## ✨ Features
 
+- **Real Project Showcase**: Displays your actual machine learning projects from GitHub
 - **Futuristic Design**: Dark theme with cyan/blue/purple gradient accents
 - **Animated Starfield Background**: Dynamic particle system for visual appeal
 - **Responsive Design**: Mobile-first approach with responsive navigation
