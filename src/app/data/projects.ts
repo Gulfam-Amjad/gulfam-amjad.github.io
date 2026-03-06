@@ -74,4 +74,52 @@ The system is deployed as a live web application using Streamlit, allowing users
     timeline: '2 weeks',
     teamSize: 'Solo Project',
   },
+  {
+    id: 'fake-news-detector',
+    title: 'Fake News Detector',
+    shortDescription: 'NLP-based classifier to detect REAL vs FAKE news articles using TF-IDF and multiple ML models.',
+    fullDescription: 'A machine learning project that classifies news articles as real or fake using NLP pipelines, TF-IDF feature extraction, and model comparison across Logistic Regression, Random Forest, and Passive Aggressive classifiers.',
+    longDescription: `This project focuses on misinformation detection by building a robust text-classification pipeline for fake news identification. It uses the Kaggle Fake and Real News dataset and transforms raw article text into vectorized features for supervised learning.
+
+The system includes modular preprocessing, training, prediction, and utility layers under src/, plus a Streamlit app for interactive inference. Multiple models are trained and benchmarked to balance speed and accuracy, with TF-IDF + Logistic Regression as a strong baseline (~98% accuracy).
+
+The repository is structured for practical ML workflows with reproducible training, saved models, and a quick-start path for local execution and demonstration.`,
+    tech: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'TF-IDF', 'Logistic Regression', 'Random Forest', 'Passive Aggressive', 'Streamlit', 'Kaggle'],
+    gradient: 'from-blue-500 to-indigo-600',
+    demoUrl: '#',
+    sourceUrl: 'https://github.com/Gulfam-Amjad/fake_news_detector',
+    images: [
+      'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1495020689067-958852a7765e?w=1200&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=1200&h=600&fit=crop',
+    ],
+    challenges: [
+      'Cleaning and normalizing long-form news text from mixed sources',
+      'Handling dataset bias and ensuring balanced REAL/FAKE classification quality',
+      'Comparing multiple ML models for best accuracy-speed tradeoff',
+      'Designing a reusable project structure for training and deployment',
+    ],
+    solutions: [
+      'Built a dedicated preprocessing pipeline in src/preprocess.py',
+      'Used TF-IDF vectorization to convert unstructured text into robust numeric features',
+      'Trained and benchmarked Logistic Regression, Random Forest, and Passive Aggressive models',
+      'Added Streamlit app interface for real-time article prediction and testing',
+    ],
+    results: [
+      'TF-IDF + Logistic Regression achieved ~98% accuracy',
+      'TF-IDF + Passive Aggressive achieved ~97% accuracy',
+      'TF-IDF + Random Forest achieved ~96% accuracy',
+      'Delivered an end-to-end fake news detection workflow from data to UI',
+    ],
+    features: [
+      'REAL vs FAKE news prediction',
+      'Modular training and inference scripts',
+      'Model comparison for multiple classifiers',
+      'Streamlit-based interactive web app',
+      'Kaggle dataset integration workflow',
+      'Saved model artifacts for reuse',
+    ],
+    timeline: '2 weeks',
+    teamSize: 'Solo Project',
+  },
 ];
