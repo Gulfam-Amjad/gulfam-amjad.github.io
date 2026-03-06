@@ -7,7 +7,7 @@ Your portfolio is **already running**! Just open:
 http://localhost:5173
 ```
 
-## Essential Commands 💻
+## Essential Commandss 💻
 
 ```bash
 # Start development server (with hot reload)
